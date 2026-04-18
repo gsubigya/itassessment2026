@@ -1,1 +1,9 @@
+This contains 5 total wireframes
+- Home (index.html)
+- Services (services.html)
+- Contact (contact.html)
+- About (about.html)
+- Gallery (gallery.html)
+
+
 https://app.moqups.com/7snpNls7oGgnWcGE5uAbgc4bw105jvH9/view/page/ad64222d5
