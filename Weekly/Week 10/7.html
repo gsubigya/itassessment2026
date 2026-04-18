@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Table</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse; /*using border-collapse to merge cell borders */
+            text-align: center;
+            font-family: "Arial", "sans-serif";
+        }
+        th {
+            background-color: #3e92a6;
+            color: white;
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+        td {
+            padding: 10px;
+            border: 1px solid #fff;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    // Start the table
+    document.write("<table>"); //table start
+    document.write("<tr><th>S.N.</th><th>Name</th><th>Image</th></tr>");
+
+    // Loop to create 4 rows
+    for (let s = 1; s <= 4; s++) {
+        let backColor; //using camel case for variable name
+
+        // Check if the number is even or odd for alternate colors
+        if (s % 2 !== 0) {
+            backColor = "#cedee2"; // Light blue/grey for odd rows
+        } else {
+            backColor = "#e9eff2"; // Lighter grey for even rows
+        }
+
+        // Write the row with the calculated background color
+        document.write("<tr style='background-color:" + backColor + "'>");
+        document.write("<td>" + s + "</td>");
+        document.write("<td>Name " + s + "</td>");
+        document.write("<td>" + s + ".jpg</td>");
+        document.write("</tr>");
+    }
+
+    document.write("</table>"); //table end
+</script>
+
+</body>
+</html>

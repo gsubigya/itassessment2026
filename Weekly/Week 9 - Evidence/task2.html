@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week9 Task 2</title>
+
+<style>
+body {
+    background-color: #00BFFF; /* Body background: DeepSkyBlue */
+    color: #330000;            /* Text color */
+    font-family: "Verdana", "sans-serif";
+    margin: 0;
+    padding: 40px;
+}
+
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    overflow: hidden; 
+}
+
+/* Header and Footer Styling */
+header, footer {
+    background-color: #ccaa66;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    border-bottom: 2px solid #000;
+}
+
+footer {
+    border-top: 2px solid #000;
+    font-size: 0.9em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+
+#content-wrapper {
+    display: flex;
+    min-height: 400px;
+}
+
+nav {
+    background-color: #E8D882; /* Left column background */
+    width: 25%;
+    padding: 20px;
+    border-right: 2px solid #000;
+}
+
+main {
+    background-color: #f1e8b0; /* Right column background */
+    width: 100%;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #330000;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+.pirate-picture {
+    float: right;
+    width: 200px;
+    margin-left: 15px;
+    border: 1px solid #ccc;
+}
+
+.address {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+main ul {
+    margin-top: 10px;
+}
+</style>
+</head>
+
+
+<body>
+
+    <div id="container">
+        <header>
+            <h1>Stinky Pete's Pirate Tavern</h1>
+        </header>
+
+        <div id="content-wrapper">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Grog</a></li>
+                    <li><a href="#">Shanties</a></li>
+                    <li><a href="#">Become a swab</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <p>Avast maties! Here ye'll be findin' all these delights...</p>
+                
+                <img src="pirate_image.png" alt="Pirate" class="pirate-picture">
+                
+                <ul>
+                    <li>Great grog</li>
+                    <li>All the rum you can drink</li>
+                    <li>Good honest pirate fare like weevily biscuits and stewed rat</li>
+                    <li>Wenches and swabs for every taste</li>
+                    <li>Salty seadogs singin' shanties</li>
+                    <li>...</li>
+                </ul>
+
+                <div class="address">
+                    Berth 23<br>
+                    Nottingham Docks<br>
+                    0115 9324567
+                </div>
+            </main>
+        </div>
+
+        <footer>
+            <p><i>Copyright &copy; 2011 Stinky Pete's Pirate Tavern</i></p>
+            <p><a href="mailto:stinkypete@arrrr.com"><i>stinkypete@arrrr.com</i></a></p>
+        </footer>
+    </div>
+
+</body>
+</html>

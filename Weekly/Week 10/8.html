@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Array Elements</title>
+</head>
+<body>
+
+
+<p id="output1"></p>
+<p id="output2"></p>
+<p id="output3"></p>
+
+<script>
+// Sample array
+let myColor = ["Red", "Green", "White", "Black"];
+
+// Using toString()
+let result1 = myColor.toString();
+
+// Using join() with default separator
+let result2 = myColor.join();
+
+// Using join('+')
+let result3 = myColor.join('+');
+
+// Display results in HTML
+document.getElementById("output1").innerHTML = result1;
+document.getElementById("output2").innerHTML = result2;
+document.getElementById("output3").innerHTML = result3;
+
+//alternative way
+//myColor = ["Red", "Green", "White", "Black"]; 
+//alert(myColor.toString()); 
+//alert(myColor.join()); 
+//alert(myColor.join('+')); 
+</script>
+
+</body>
+</html>

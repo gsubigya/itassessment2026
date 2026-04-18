@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Division Calculator</title>
+</head>
+<body>
+
+<script>
+    // Take marks input from user
+    let marks = parseFloat(prompt("Enter your marks (0 - 100):"));
+
+    // Check conditions
+    if (marks >= 80 && marks <= 100) {
+        alert("Distinction");
+    }
+    else if (marks >= 60 && marks < 80) {
+        alert("First Division");
+    }
+    else if (marks >= 50 && marks < 60) {
+        alert("Second Division");
+    }
+    else if (marks >= 40 && marks < 50) {
+        alert("Third Division");
+    }
+    else if (marks < 40) {
+        alert("Fail");
+    }
+    else {
+        alert("Invalid marks entered!");
+    }
+</script>
+
+</body>
+</html>

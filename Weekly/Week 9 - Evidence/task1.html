@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 Task 1</title>
+
+<style>
+.container {
+  position: relative; /* relative  */
+  width: 600px;
+  height: 400px;
+  background-color: #fffde7;
+  border: 2px solid #a3a375;
+  margin: 20px;
+}
+
+
+.box {
+  position: absolute;
+  border: 1px inset #eee;
+  background-color: white;
+  padding: 8px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Header */
+.header { 
+    height: 60px; 
+    top: 10px; 
+    text-align: center;
+    padding: 4px;
+}
+.col1 { 
+    width: 180px; 
+    left: 10px; 
+}
+.col2 { 
+    width: 190px; 
+    left: 200px; 
+}
+.col3 { 
+    width: 190px; 
+    left: 400px; 
+}
+
+/* Row 2 and 3*/
+.blue {
+  top: 80px;
+  left: 10px;
+  width: 180px;
+  height: 310px;
+  background-color: #add8e6;
+}
+
+.yellow {
+  top: 80px;
+  left: 200px;
+  width: 190px;
+  height: 60px;
+  background-color: yellow;
+  text-align: right;
+  font-size: 24px;
+}
+
+.red {
+  top: 80px;
+  left: 400px;
+  width: 190px;
+  height: 60px;
+  background-color: red;
+  text-align: center;
+  font-size: 24px;
+}
+
+.green {
+  top: 150px;
+  left: 200px;
+  width: 390px;
+  height: 240px;
+  background-color: green;
+  color: black;
+}
+
+/* List Styling */
+p { 
+    font-weight: none; 
+    margin-top: 0;
+    font-size: 22px;
+}
+
+ul, ol { 
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+    <div class="container">
+  <div class="box header col1"><h2>Column 1</h2></div>
+  <div class="box header col2"><h2>Column 2</h2></div>
+  <div class="box header col3"><h2>Column 3</h2></div>
+
+  <div class="blue box">
+    <p>A numbered list:</p>
+    <ol>
+      <li>Able</li>
+      <li>Baker</li>
+      <li>Charlie</li>
+      <li>Delta</li>
+      <li>Echo</li>
+    </ol>
+  </div>
+
+  <div class="yellow box">B</div>
+  <div class="red box">C</div>
+
+  <div class="green box">
+    <p>An unnumbered list:</p>
+    <ul>
+      <li>Pounds</li>
+      <li>Dollars</li>
+      <li>Euro</li>
+      <li>Yen</li>
+      <li>Roubles</li>
+    </ul>
+  </div>
+</div>
+
+
+</body>
+</html>

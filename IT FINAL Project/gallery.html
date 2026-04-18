@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NatureRoot Nursery | Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* lightbox kept here since it's only used on this page */
+    #lb {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(30, 40, 30, 0.88);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    #lb.open { display: flex; }
+    #lb img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 4px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+      display: block;
+    }
+    #lb-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      background: none;
+      border: 2px solid rgba(255,255,255,0.6);
+      color: #fff;
+      font-size: 1.4rem;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    #lb-close:hover { background: rgba(255,255,255,0.15); }
+    #lb-caption {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: rgba(255,255,255,0.85);
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.4);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <nav class="top-bar-inner" aria-label="Main navigation">
+      <a href="index.html" class="logo">Nature<em>Root</em></a>
+      <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html" class="here">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- lightbox overlay -->
+  <div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lb-close" aria-label="Close image viewer">&times;</button>
+    <img id="lb-img" src="" alt="" />
+    <div id="lb-caption"></div>
+  </div>
+
+  <div class="page-intro">
+    <div class="wrap">
+      <h1>Photo Gallery</h1>
+      <p>A look at our nursery, our plants, and some of the spaces we have helped transform.</p>
+    </div>
+  </div>
+
+  <main>
+    <section class="row">
+      <div class="wrap">
+        <p class="eyebrow">Gallery</p>
+        <h2 class="row-title">Plants &amp; Spaces</h2>
+        <p class="row-intro">
+          Click any thumbnail to view the full-size image. Photos are taken at our
+          nursery, in our greenhouse, and at customer gardens we have helped design.
+        </p>
+
+        <!-- images pulled from Unsplash internet required -->
+        <div class="photo-grid">
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=90"
+             data-caption="Seedlings in the main greenhouse early spring"
+             aria-label="View full size: Seedlings in the main greenhouse"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400&q=70"
+                 alt="Rows of small green seedlings in black nursery trays inside a greenhouse" />
+            <div class="thumb-label">Seedlings: Early Spring</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=90"
+             data-caption="Houseplant potting station workshop day"
+             aria-label="View full size: Houseplant potting station"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=400&q=70"
+                 alt="Hands potting a small green houseplant into a terracotta pot on a wooden table" />
+            <div class="thumb-label">Workshop: Potting Day</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1200&q=90"
+             data-caption="Customer garden Lalitpur, after planting"
+             aria-label="View full size: Customer garden in Lalitpur"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=400&q=70"
+                 alt="A lush, colourful garden with flowering plants and neatly trimmed hedges" />
+            <div class="thumb-label">Customer Garden: Lalitpur</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1563299796-17596ed6b017?w=1200&q=90"
+             data-caption="Nursery yard pot display area"
+             aria-label="View full size: Nursery yard pot display"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1563299796-17596ed6b017?w=400&q=70"
+                 alt="Dozens of green plants in terracotta and plastic pots arranged in a bright nursery yard" />
+            <div class="thumb-label">Nursery Yard</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=1200&q=90"
+             data-caption="Greenhouse interior propagation benches"
+             aria-label="View full size: Greenhouse propagation benches"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=400&q=70"
+                 alt="Long greenhouse benches covered with trays of seedlings in warm filtered light" />
+            <div class="thumb-label">Greenhouse: Propagation</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1518335935020-cfd6580c1ab4?w=1200&q=90"
+             data-caption="Vegetable garden bed summer crop"
+             aria-label="View full size: Vegetable garden bed"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1518335935020-cfd6580c1ab4?w=400&q=70"
+                 alt="A raised vegetable garden bed with tall tomato plants, beans, and green leaves" />
+            <div class="thumb-label">Vegetable Garden: Summer</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200&q=90"
+             data-caption="Houseplant shelf indoor section"
+             aria-label="View full size: Indoor houseplant display"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=400&q=70"
+                 alt="A shelf filled with assorted indoor plants in various green shades, well lit by natural light" />
+            <div class="thumb-label">Indoor Plant Display</div>
+          </a>
+
+          <a class="thumb"
+             href="https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=1200&q=90"
+             data-caption="Herb garden customer balcony project"
+             aria-label="View full size: Balcony herb garden"
+             target="_blank" rel="noopener">
+            <img src="https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=400&q=70"
+                 alt="Small terracotta pots with fresh green herbs including basil and mint on a sunny balcony" />
+            <div class="thumb-label">Balcony Herb Garden</div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <div class="bottom-inner">
+      <div class="bottom-cols">
+        <div class="bottom-brand">
+          <h3>NatureRoot Nursery</h3>
+          <p>Helping Kathmandu grow. Trees, shrubs, flowers,
+          herbs, and garden supplies.</p>
+        </div>
+        <div class="bottom-col">
+          <h4>Visit Us</h4>
+          <address>
+            Nursery Lane, Lalitpur<br />
+            Kathmandu Valley, Nepal<br />
+            Open daily: 8 am – 6 pm<br />
+            <a href="tel:+977-9876543211">+977-9876543211</a><br />
+            <a href="mailto:hello@natureroot.com.np">hello@natureroot.com.np</a>
+          </address>
+        </div>
+        <div class="bottom-col">
+          <h4>Quick Links</h4>
+          <address>
+            <a href="about.html">About NatureRoot</a><br />
+            <a href="services.html">Our Services</a><br />
+            <a href="gallery.html">Photo Gallery</a><br />
+            <a href="contact.html">Get in Touch</a>
+          </address>
+        </div>
+      </div>
+      <nav class="foot-nav" aria-label="Secondary navigation">
+        <div class="foot-nav-row">
+          <a href="index.html">Home</a><span>|</span>
+          <a href="about.html">About</a><span>|</span>
+          <a href="services.html">Services</a><span>|</span>
+          <a href="gallery.html">Gallery</a><span>|</span>
+          <a href="contact.html">Contact</a><span>|</span>
+          <a href="mailto:hello@natureroot.com.np">Email Us</a>
+        </div>
+        <p class="copy">&copy; 2026 NatureRoot Nursery. All rights reserved.</p>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // lightbox — inspired by https://www.w3schools.com/howto/howto_js_lightbox.asp
+    (function () {
+      var lb      = document.getElementById('lb');
+      var lbImg   = document.getElementById('lb-img');
+      var lbCap   = document.getElementById('lb-caption');
+      var lbClose = document.getElementById('lb-close');
+
+      document.querySelectorAll('.thumb').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          lbImg.src = link.getAttribute('href');
+          lbImg.alt = link.querySelector('img').getAttribute('alt');
+          lbCap.textContent = link.getAttribute('data-caption') || '';
+          lb.classList.add('open');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function closeLb() {
+        lb.classList.remove('open');
+        lbImg.src = '';
+        document.body.style.overflow = '';
+      }
+
+      lbClose.addEventListener('click', closeLb);
+      lb.addEventListener('click', function (e) { if (e.target === lb) closeLb(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeLb(); });
+    })();
+  </script>
+</body>
+</html>
