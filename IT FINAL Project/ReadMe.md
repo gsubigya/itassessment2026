@@ -17,6 +17,8 @@ Nursery Themed Website
 This palette was chosen to depect the nursery brand from a basic garden shop to a better looking premium experience.
 The Color used are warm, light, and feels earthy and natural. Using these colors together brings a sense of growth, health, nature and expertise to viewer which holds a complete essense of the Nursery Theme website.
 
+To keep the design minimal and natural i have made use of 3 main colors.
+
 The website design and color inspirations were from:
 https://dribbble.com/tags/nursery-website
 
