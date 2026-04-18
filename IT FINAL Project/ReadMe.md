@@ -30,3 +30,5 @@ The image slider and lightbox were inspired from w3 schools page i have attached
 style.css holds style for every webpage
 
 script.js holds validation checks, gallery image scroll, and other major workings
+
+WireFrame URL: https://app.moqups.com/7snpNls7oGgnWcGE5uAbgc4bw105jvH9/view/page/ad64222d5 (5 Pages)
